@@ -16,3 +16,4 @@ Final Presentation:
 ## 📬 Connect with Me
 - 📧 [Email](mailto:talisamanker@gmail.com)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/talisamanker/)
+![Retro Windows Mascot]
