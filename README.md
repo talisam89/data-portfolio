@@ -2,9 +2,6 @@
 
 ## ✈️ Flight Prices
 ### Project Description
-[Insert Descrtiption Here]
-
-**Business Question**
 
 What is the optimal number of days before departure to book a flight for the lowest fare?
 
