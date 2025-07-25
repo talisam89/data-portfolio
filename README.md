@@ -18,4 +18,4 @@ Exploratory analysis, data cleaning, analyzing big data, data visualization, das
 ## 📬 Connect with Me
 - 📧 [Email](mailto:talisamanker@gmail.com)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/talisamanker/)
-![Retro Windows Mascot]
+
