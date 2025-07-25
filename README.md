@@ -2,14 +2,17 @@
 
 ## Flight Prices
 **Business Question**
+
 What is the optimal number of days before departure to book a flight for the lowest fare?
 
 **Project Description**
 
 **Tech Stack**
+
 Pycharm, Python, Dask, Looker Studio 
 
 **Skills**
+
 Exploratory analysis, data cleaning, analyzing big data, data visualization, dashboard design 
 
 
