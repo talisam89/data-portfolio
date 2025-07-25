@@ -9,7 +9,7 @@
 What is the optimal number of days before departure to book a flight for the lowest fare?
 
 ### Tech Stack 
-Pycharm, Python, Dask, Looker Studio 
+Pycharm, Jupyter Notebook, Python (libraries: Dask, Pandas), Looker Studio 
 
 ### Skills
 Exploratory analysis, data cleaning, analyzing big data, data visualization, dashboard design, creative problem solving, Strategic thinking 
