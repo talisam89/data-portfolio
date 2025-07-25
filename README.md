@@ -1,16 +1,13 @@
 # Data Portfolio by Talisa Manker
 
-## Data Cleaning
+## Flight Prices
+#### Description
 
-## Storytelling
+#### Tech Stack
+- Pycharm
+- Looker Studio
+- Python, Dask
 
-## Explanatory 
-
-## Georgia Tech Projects
-**What Do Consumers Want In A Board Game**
-
-Final Presentation: 
-🎥[Watch Video](https://www.youtube.com/watch?v=Ls5xW3hmQfU) 
 
 
 ## 📬 Connect with Me
