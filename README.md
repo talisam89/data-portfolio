@@ -1,18 +1,16 @@
 # Data Portfolio by Talisa Manker
 
-## Flight Prices
-**Business Question**
+## ✈️ Flight Prices
+#####Project Description
+[Insert Descrtiption Here]
 
+**Business Question**
 What is the optimal number of days before departure to book a flight for the lowest fare?
 
-**Project Description**
-
-**Tech Stack**
-
+#####Tech Stack 
 Pycharm, Python, Dask, Looker Studio 
 
-**Skills**
-
+#####Skills
 Exploratory analysis, data cleaning, analyzing big data, data visualization, dashboard design 
 
 
