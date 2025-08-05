@@ -7,14 +7,18 @@ A large Flight Prices data set was used to answer the question. The data was exp
 
 The cleaned data was presented in a dashboard created in Looker Studio. The dynamic filters on the dashboard allow the user to decide what criteria is most important to them when determining the optimal number of days before departure to book. 
 
+### Data Set
+[Flight Prices](https://www.kaggle.com/datasets/dilwong/flightprices?utm_source=chatgpt.com) data set created by Dillon Wong on Kaggle.
+- 31.09 GB
+- 27 fields
+- 82,138,753 rows 
+
 ### Tech Stack 
 Pycharm, Jupyter Notebook, Python (libraries: Dask, Pandas), Looker Studio 
 
 ### Skills
 Exploratory analysis, data cleaning, analyzing big data, data visualization, dashboard design, creative problem solving, strategic thinking
 
-### Data Set
-[Flight Prices](https://www.kaggle.com/datasets/dilwong/flightprices?utm_source=chatgpt.com) data set created by Dillon Wong on Kaggle.
-- 31.09 GB
-- 27 fields
-- 82,138,753 rows 
+### Outputs
+EDA & Clenaing Notebook
+Dashboard
