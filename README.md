@@ -9,7 +9,7 @@ What is the optimal number of days before departure to book a flight for the low
 Pycharm, Jupyter Notebook, Python (libraries: Dask, Pandas), Looker Studio 
 
 ### Skills
-Exploratory analysis, data cleaning, analyzing big data, data visualization, dashboard design, creative problem solving, Strategic thinking
+Exploratory analysis, data cleaning, analyzing big data, data visualization, dashboard design, creative problem solving, strategic thinking
 
 
 ## 📬 Connect with Me
