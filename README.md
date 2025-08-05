@@ -15,8 +15,9 @@ Pycharm, Jupyter Notebook, Python (libraries: Dask, Pandas), Looker Studio
 ### Skills
 Exploratory analysis, data cleaning, analyzing big data, data visualization, dashboard design, creative problem solving, strategic thinking
 
+### Outputs
 
-## 📬 Connect with Me
+# 📬 Connect with Me
 - 📧 [Email](mailto:talisamanker@gmail.com)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/talisamanker/)
 
