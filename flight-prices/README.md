@@ -20,5 +20,5 @@ Pycharm, Jupyter Notebook, Python (libraries: Dask, Pandas), Looker Studio
 Exploratory analysis, data cleaning, analyzing big data, data visualization, dashboard design, creative problem solving, strategic thinking
 
 ### Outputs
-- [EDA & Clenaing Notebook](flight-prices/Flight_data_EDA.ipynb)
+- [EDA & Clenaing Notebook](https://github.com/talisam89/data-portfolio/blob/main/flight-prices/Flight_data_EDA.ipynb)
 - Dashboard
