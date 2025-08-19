@@ -27,17 +27,17 @@ Tasks still took several minutes each to run and there were some issues with pre
 ##### Step 2 - Exploratory Analysis
 
 The initial Exploratory Analysis aimed to answer these questions:
-	- What columns can be dropped to reduce the dataset size?
-	- How can the data be filtered to reduce the dataset size?
-	- Which columns would be most useful as filters to enhance insight into the optimal number of days before departure to book a flight?
+- What columns can be dropped to reduce the dataset size?
+- How can the data be filtered to reduce the dataset size?
+- Which columns would be most useful as filters to enhance insight into the optimal number of days before departure to book a flight?
 
 Initial exploratory analysis included looking at the data types and number of missing values in each column. It also included segmenting the data by different features (like airline, nonstop, airport etc.) to find ways to shrink the output so it could be uploaded to Looker Studio. 
 
 Exploratory analysis turned into a bit of an iterative process where new questions came up after moving on to cleaning and even after uploading the data to Looker Studio. Initially I shrunk the data set to nonstop flights only, since that was the type of flight I was most interested in. I then tried to separate the data by airline to further reduce the data set. 
 
-After separating out airlines and uploading data to Looker Studio I realized 2 things.
-	1) There were some flights that were only $.01
-	2) Not all flights had been checked every day.
+After separating out airlines and uploading data to Looker Studio I realized:
+- There were some flights that were only $.01
+- Not all flights had been checked every day.
 
 I went back to exploratory analysis and discovered, with the help of ChatGPT, that the total fare for the airlines and dates used in this data set should be $25 or above. ChatGPT also mentioned that budget carriers like Spirit and Frontier could potentially have had sales making the total fare between $19 and $39 dollars.
 
@@ -56,31 +56,31 @@ Like exploratory analysis, data cleaning was a bit of an iterative process that 
 One of the most challenging cleaning tasks was calculating and converting the number of days before departure a price was being checked. I needed to convert the date columns in the data to date time objects, create a new column that calculated the difference between the dates, and convert this difference to a number that could be used in a graph. 
 
 The cleaning tasks I focused on included:
-	- Remove more unnecessary columns
-	- Convert searchDate and FlightDate to date objects that can be subtracted from each other
-	- Create days before departure column and numeric days before departure column
-	- Calculate daysBeforeDeparture using searchDate and FlightDate
-	- Convert segmentsDurationInSeconds from string to float64
-	- Convert segmentsDurationInSeconds to hours
-	- Limit data to flight IDs with 60 or more records
+- Remove more unnecessary columns
+- Convert searchDate and FlightDate to date objects that can be subtracted from each other
+- Create days before departure column and numeric days before departure column
+- Calculate daysBeforeDeparture using searchDate and FlightDate
+- Convert segmentsDurationInSeconds from string to float64
+- Convert segmentsDurationInSeconds to hours
+- Limit data to flight IDs with 60 or more records
 
 Columns To Remove: Why Remove Them:
-	- fareBasisCode: don't know what this means
-	- elapsedDays: don't think this impacts price much, usually 0
-	- segmentsDepartureTimeEpochSeconds: likely impacts price but choosing to not include
-	- segmentsDepartureTimeRaw: likely impacts price but choosing to not include
-	- segmentsArrivalTimeEpochSeconds: likely impacts price but choosing to not include
-	- segmentsArrivalTimeEpochSeconds: likely impacts price but choosing to not include
-	- segmentsArrivalTimeRaw: likely impacts price but choosing to not include
-	- segmentsArrivalAirportCode: focusing on departure and destination not layovers
-	- segmentsDepartureAirportCode: focusing on departure and destination not layovers
-	- segmentsAirlineCode: using the airline name
-	- segmentsEquipmentDescription: don't care about the type of plane
-	- travelDuration: in a weird format, using segmentsDurationInSeconds instead
-	- isBasicEconomy: doesn't match numbers of class, info in segment class more helpful
-	- isNonStop: already filtered on this and know data is only for nonstop flights
-	- segmentsDistance: going to use totalTravelDistance instead
-	- DistanceComp: column I added that I don't need
+- fareBasisCode: don't know what this means
+- elapsedDays: don't think this impacts price much, usually 0
+- segmentsDepartureTimeEpochSeconds: likely impacts price but choosing to not include
+- segmentsDepartureTimeRaw: likely impacts price but choosing to not include
+- segmentsArrivalTimeEpochSeconds: likely impacts price but choosing to not include
+- segmentsArrivalTimeEpochSeconds: likely impacts price but choosing to not include
+- segmentsArrivalTimeRaw: likely impacts price but choosing to not include
+- segmentsArrivalAirportCode: focusing on departure and destination not layovers
+- segmentsDepartureAirportCode: focusing on departure and destination not layovers
+- segmentsAirlineCode: using the airline name
+- segmentsEquipmentDescription: don't care about the type of plane
+- travelDuration: in a weird format, using segmentsDurationInSeconds instead
+- isBasicEconomy: doesn't match numbers of class, info in segment class more helpful
+- isNonStop: already filtered on this and know data is only for nonstop flights
+- segmentsDistance: going to use totalTravelDistance instead
+- DistanceComp: column I added that I don't need
 
 
 
