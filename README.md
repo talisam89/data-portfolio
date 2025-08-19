@@ -90,4 +90,27 @@ I could format the y axes as currency despite the data being imported into Looke
 
 <img width="1198" height="371" alt="image" src="https://github.com/user-attachments/assets/d1a76a0a-8960-49cc-b8a5-97fd5cef7e14" />
 
+Next I worked on the average flight price by days before departure. To make the graph more readable I binned the data into bins of size 7 (aka weeks). To keep the graph clutter free I used data labels in place of an x axis and did not include grid lines or axis labels. I found the tool tip for this graph redundant but there is not currently a way to turn it off. Instead I used a work around of putting a clear box over the graph to prevent the tool tip from popping up. 
+
+I wanted the eye to be drawn to this graph, as it best answers my business question. I chose a blue color that would grab user attention without being offensive. The blue is tied into the rest of the dashboard through the dashboard title. 
+
+<img width="697" height="315" alt="image" src="https://github.com/user-attachments/assets/46605763-7301-4b33-a975-413b3bb92c6c" />
+
+I kept the filters simple since most of the information users would be curious about is captured in the graphs. I used the labels "From" and "To" because they are used on most travel sites. I trust that users will figure out the filters list airport codes. I decided I would not include a date filter because the date information was captured in the graphs. 
+
+<img width="373" height="98" alt="image" src="https://github.com/user-attachments/assets/499b9f29-ee00-4538-9356-a95eaf5d0bc9" />
+<img width="448" height="538" alt="image" src="https://github.com/user-attachments/assets/2fb933d2-8543-4ab8-8185-ea580c0de831" />
+
+I struggled to decide on metrics to include on the dashboard since the graphs do most of the heavy lifting. I finally decided that seeing the number of flights would be informative since it gives context to the average price, especially when using the airport filters. I added the average ticket price metric because I realized I did not have a total average price anywhere - it was always broken out by some other attribute. This metric is most informative when using the filters.
+
+<img width="401" height="95" alt="image" src="https://github.com/user-attachments/assets/7f74dc42-b874-424b-88ce-40e754b59ffc" />
+
+
+I chose a grey color scheme because I find white to be harsh on the eyes and black to create too much of a contrast. The grey is soft and creates just enough of a contrast that color of the bar graph pops. I centered the metric tiles because I wanted the bar graph to be the center piece of the dashboard. I thought having the metric tiles in the upper left corner would make them feel like the center piece rather than an accessory. However I wanted to keep the metric tiles at the top, consistent with common dashboard design practices, so I moved them to the middle. 
+
+<img width="1199" height="820" alt="image" src="https://github.com/user-attachments/assets/aa663afe-4cd6-484c-a228-e174cdfce733" />
+
+
+
+
 
