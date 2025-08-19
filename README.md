@@ -13,9 +13,14 @@ A large Flight Prices data set from Kaggle was used to answer the question. The 
 Pycharm, Jupyter Notebook, Python (libraries: Dask, Pandas), Looker Studio 
 #### Skills
 Exploratory analysis, data cleaning, analyzing big data, data visualization, dashboard design, creative problem solving, strategic thinking
+#### Project Outputs
+- [EDA & Cleaning Notebook](https://github.com/talisam89/data-portfolio/blob/main/flight-prices/Flight_data_EDA.ipynb)
+- [Looker Studio Dashboard](https://lookerstudio.google.com/reporting/fabdcd7e-3789-4d10-abc8-9696a26eed5e)
 #### Project Description
-##### Step 1
-- [EDA & Clenaing Notebook](https://github.com/talisam89/data-portfolio/blob/main/flight-prices/Flight_data_EDA.ipynb)
+##### Step 1 - Exploratory Analysis
+
+##### Step 2 - Data Cleaning
+##### Step 3 - Dashboard Creation 
 
 
 
