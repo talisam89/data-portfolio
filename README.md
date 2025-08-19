@@ -99,7 +99,7 @@ I wanted the eye to be drawn to this graph, as it best answers my business quest
 I kept the filters simple since most of the information users would be curious about is captured in the graphs. I used the labels "From" and "To" because they are used on most travel sites. I trust that users will figure out the filters list airport codes. I decided I would not include a date filter because the date information was captured in the graphs. 
 
 <img width="373" height="98" alt="image" src="https://github.com/user-attachments/assets/499b9f29-ee00-4538-9356-a95eaf5d0bc9" />
-
+<br>
 <img width="448" height="538" alt="image" src="https://github.com/user-attachments/assets/2fb933d2-8543-4ab8-8185-ea580c0de831" />
 
 I struggled to decide on metrics to include on the dashboard since the graphs do most of the heavy lifting. I finally decided that seeing the number of flights would be informative since it gives context to the average price, especially when using the airport filters. I added the average ticket price metric because I realized I did not have a total average price anywhere - it was always broken out by some other attribute. This metric is most informative when using the filters.
