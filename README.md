@@ -4,7 +4,8 @@
 - 🔗 [LinkedIn](https://www.linkedin.com/in/talisamanker/)
 
 ## Projects
-### ✈️ [Flight Prices](https://github.com/talisam89/data-portfolio/tree/main/flight-prices)
+### ✈️ Flight Prices
+[Link to Project Repository](https://github.com/talisam89/data-portfolio/tree/main/flight-prices)
 #### Business Problem
 What is the optimal number of days before departure to book a flight for the lowest fare?
 #### Project Summary
