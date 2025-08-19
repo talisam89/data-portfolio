@@ -82,7 +82,12 @@ Columns To Remove: Why Remove Them:
 - segmentsDistance: going to use totalTravelDistance instead
 - DistanceComp: column I added that I don't need
 
+##### Step 4 - Building the Dashboard
 
+The first graphs I created were the time series graphs showing the average flight price over time broken out by airline. The graphs looked cluttered with all the airlines on it so I separated the data by major and budget airlines. To help people visually distinguish the individual airline I color coded the lines based on the airlines official brand colors. 
 
+I could format the y axes as currency despite the data being imported into Looker Studio as currency, but the currency format did show up in the tool tip. To reduce clutter in the graphs I did not include grid lines or axis labels. The interactive tool tips provide the context that grid lines would have provided. A combination of the graph title and trusting users are familiar with a time series format made the axis titles redundant. 
+
+<img width="1198" height="371" alt="image" src="https://github.com/user-attachments/assets/d1a76a0a-8960-49cc-b8a5-97fd5cef7e14" />
 
 
