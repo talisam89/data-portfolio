@@ -1,31 +1,30 @@
-# Data Portfolio by Talisa Manker
-## 📬 Connect with Me
+# 📬 Connect with Me
 - 📧 [Email](mailto:talisamanker@gmail.com)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/talisamanker/)
 
-## Projects
-### ✈️ Flight Prices
+# Projects
+## ✈️ Flight Prices
 [Link to Project Files](https://github.com/talisam89/data-portfolio/tree/main/flight-prices)
-#### Business Problem
+### Business Problem
 What is the optimal number of days before departure to book a flight for the lowest fare?
-#### Project Summary
+### Project Summary
 A large Flight Prices data set from Kaggle was used to answer the question. The data was explored and cleaned in a Jupyter Notebook create in PyCharm. The Python Dask library was used to increase data processing speeds. Much of the EDA and cleaning focused on reducing the data set to a size that could be uploaded within the file size restrictions for Looker Studio.  Creative problem solving and strategic thinking helped to shrink the dataset while keeping the data variety needed to answer the business question. The cleaned data was presented in a dashboard created in Looker Studio that split the data by airline and allows the user to filter by departure and destination airport.
-#### Tech Stack 
+### Tech Stack 
 Pycharm, Jupyter Notebook, Python (libraries: Dask, Pandas), Looker Studio 
-#### Skills
+### Skills
 Exploratory analysis, data cleaning, analyzing big data, data visualization, dashboard design, creative problem solving, strategic thinking, data wrangling, data quality assessment, iterative analysis, tool optimization 
-#### Project Outputs
+### Project Outputs
 - [EDA & Cleaning Notebook](https://github.com/talisam89/data-portfolio/blob/main/flight-prices/Flight_data_EDA.ipynb)
 - [Looker Studio Dashboard](https://lookerstudio.google.com/reporting/fabdcd7e-3789-4d10-abc8-9696a26eed5e)
-#### Project Description
-##### Step 1 - Managing dataset size for exploratory analysis
+### Project Description
+#### Step 1 - Managing dataset size for exploratory analysis
 
 Exploring the data was challenging due to its size. I immediately realized Pandas wasn't going to cut it, the data was taking too long to load. I searched for solutions and came across the Dask library which lets you work with data without loading it all into memory at once. 
 
 Rather than immediately processing code, the Dask library creates a task graph that consists of primary tasks and subtasks with edges indicating dependencies. It can split the tasks across CPU cores and run them parallel when you tell it to start processing.
 
 Tasks still took several minutes each to run and there were some issues with previewing the data due to not having all of it loaded into memory, but overall Dask worked well for cleaning and Exploratory Analysis
-##### Step 2 - Exploratory Analysis
+#### Step 2 - Exploratory Analysis
 
 The initial Exploratory Analysis aimed to answer these questions:
 - What columns can be dropped to reduce the dataset size?
@@ -50,7 +49,7 @@ As I was working out the fare price issue I noticed that not all the flights had
 
 A downside to filtering out all those records is that it also filtered out all flights that weren't coach which meant I wouldn't be able to use cabin code as a filter on my dashboard. But this was a concession I was willing to make since I was more interested in coach flights anyways. 
 
-##### Step 3 - Data Cleaning
+#### Step 3 - Data Cleaning
 
 Like exploratory analysis, data cleaning was a bit of an iterative process that I came back to after uploading the data to Looker Studio. Getting the data uploaded to Looker Studio was also tedious, I exported a lot of CSVs before finally arriving at a cleaned data set that would work for my purposes.  
 
@@ -83,7 +82,7 @@ Columns To Remove: Why Remove Them:
 - segmentsDistance: going to use totalTravelDistance instead
 - DistanceComp: column I added that I don't need
 
-##### Step 4 - Building the Dashboard
+#### Step 4 - Building the Dashboard
 
 The first graphs I created were the time series graphs showing the average flight price over time broken out by airline. The graphs looked cluttered with all the airlines on it so I separated the data by major and budget airlines. To help people visually distinguish the individual airline I color coded the lines based on the airlines official brand colors. 
 
@@ -94,24 +93,29 @@ I could format the y axes as currency despite the data being imported into Looke
 Next I worked on the average flight price by days before departure. To make the graph more readable I binned the data into bins of size 7 (aka weeks). To keep the graph clutter free I used data labels in place of an x axis and did not include grid lines or axis labels. I found the tool tip for this graph redundant but there is not currently a way to turn it off. Instead I used a work around of putting a clear box over the graph to prevent the tool tip from popping up. 
 
 I wanted the eye to be drawn to this graph, as it best answers my business question. I chose a blue color that would grab user attention without being offensive. The blue is tied into the rest of the dashboard through the dashboard title. 
-
+<p align="center">
 <img width="697" height="315" alt="image" src="https://github.com/user-attachments/assets/46605763-7301-4b33-a975-413b3bb92c6c" />
+</p>
 
 I kept the filters simple since most of the information users would be curious about is captured in the graphs. I used the labels "From" and "To" because they are used on most travel sites. I trust that users will figure out the filters list airport codes. I decided I would not include a date filter because the date information was captured in the graphs. 
 
+<p align="center">
 <img width="373" height="98" alt="image" src="https://github.com/user-attachments/assets/499b9f29-ee00-4538-9356-a95eaf5d0bc9" />
 <br>
 <img width="448" height="538" alt="image" src="https://github.com/user-attachments/assets/2fb933d2-8543-4ab8-8185-ea580c0de831" />
+</p>
 
 I struggled to decide on metrics to include on the dashboard since the graphs do most of the heavy lifting. I finally decided that seeing the number of flights would be informative since it gives context to the average price, especially when using the airport filters. I added the average ticket price metric because I realized I did not have a total average price anywhere - it was always broken out by some other attribute. This metric is most informative when using the filters.
 
+<p align="center">
 <img width="401" height="95" alt="image" src="https://github.com/user-attachments/assets/7f74dc42-b874-424b-88ce-40e754b59ffc" />
-
+</p>
 
 I chose a grey color scheme because I find white to be harsh on the eyes and black to create too much of a contrast. The grey is soft and creates just enough of a contrast that color of the bar graph pops. I centered the metric tiles because I wanted the bar graph to be the center piece of the dashboard. I thought having the metric tiles in the upper left corner would make them feel like the center piece rather than an accessory. However I wanted to keep the metric tiles at the top, consistent with common dashboard design practices, so I moved them to the middle. 
 
-<img width="1199" height="820" alt="image" src="https://github.com/user-attachments/assets/aa663afe-4cd6-484c-a228-e174cdfce733" />
-
+<p align="center">
+<img width="700" height="480" alt="image" src="https://github.com/user-attachments/assets/aa663afe-4cd6-484c-a228-e174cdfce733" />
+</p>
 
 
 
