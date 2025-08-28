@@ -14,16 +14,12 @@ Pycharm, Jupyter Notebook, Python (libraries: Dask, Pandas), Looker Studio
 #### Skills
 Exploratory analysis, data cleaning, analyzing big data, data visualization, dashboard design, creative problem solving, strategic thinking, data wrangling, data quality assessment, iterative analysis, tool optimization 
 
-### Project Outputs
-- 📊 [Click here to view the interactive Looker Studio dashboard](https://lookerstudio.google.com/reporting/fabdcd7e-3789-4d10-abc8-9696a26eed5e)
-- 📓 [Click here to view the EDA & cleaning notebook](flight-prices/Flight_data_EDA.ipynb)
-
 ### Project Description
 #### Data Set
 The data set was created by Dillon Wong on Kaggle. The dataset contains **82.1M rows** and **27 fields**, totaling **31.1 GB** in size.
 [Click here to view the Flight Prices dataset on Kaggle](https://www.kaggle.com/datasets/dilwong/flightprices?utm_source=chatgpt.com)
 
-##### Step 1 - Managing dataset size for exploratory analysis
+#### Step 1 - Managing dataset size for exploratory analysis
 
 Exploring the data was challenging due to its size. It was immediately clear that Pandas wasn't going to cut it, the data was taking too long to load. I searched for solutions to working with large data sets and came across the Dask library which lets you work with data without loading it all into memory at once. 
 
@@ -31,7 +27,7 @@ Rather than immediately processing code, the Dask library creates a task graph t
 
 Tasks still took several minutes each to run and there were some issues with previewing the data due to not having all of it loaded into memory, but overall Dask worked well for cleaning and exploratory analysis
 
-##### Step 2 - Exploratory Analysis
+#### Step 2 - Exploratory Analysis
 
 The initial Exploratory Analysis aimed to answer these questions:
 	- What columns can be dropped to reduce the dataset size?
@@ -56,7 +52,7 @@ As I was working out the fare price issue I noticed that not all the flights had
 
 A downside to filtering out all those records was that it also filtered out all flights that weren't coach which meant I wouldn't be able to use cabin code as a filter on my dashboard. But this was a concession I was willing to make to achieve a smaller data set.
 
-##### Step 3 - Data Cleaning
+#### Step 3 - Data Cleaning
 
 Like exploratory analysis, data cleaning was a bit of an iterative process that I came back to after uploading the data to Looker Studio. One of the most challenging cleaning tasks was calculating and converting the number of days before departure a price was being checked. I needed to convert the date columns in the data to date time objects, create a new column that calculated the difference between the dates, and convert this difference to a number that could be used in a graph. 
 
@@ -87,7 +83,7 @@ Columns To Remove: Why Remove Them:
 - segmentsDistance: going to use totalTravelDistance instead
 - DistanceComp: column I added that I don't need
 
-##### Step 4 - Building the Dashboard
+#### Step 4 - Building the Dashboard
 
 The first graphs I created were the time series graphs showing the average flight price over time broken out by airline. The graphs looked cluttered with all the airlines on it so I separated the data by major and budget airlines. To help people visually distinguish the individual airline I color coded the lines based on the airlines official brand colors. To reduce clutter in the graphs I did not include grid lines or axis labels. The interactive tool tips provide the context that grid lines would have provided. A combination of the graph title and trusting users are familiar with a time series format made the axis titles redundant. 
 
@@ -120,10 +116,13 @@ I intentionally chose a grey color scheme because it is soft and creates just en
 <img width="700" height="480" alt="image" src="https://github.com/user-attachments/assets/aa663afe-4cd6-484c-a228-e174cdfce733" />
 </p>
 
-##### Conclusion
+#### Conclusion
 The optimal number of days before departure to book a flight is 21 to 28 days (3-4 weeks) before departure. However the price varies by only a few dollars until 7-14 days before departure, and may be a negligible difference for most customers. 
 
 There is variation depending on the departure location and destination as well as the airline. When flying from JFK to LAX the optimal number of days to book a flight is 14 to 21 days (2-3 weeks) before departure.  Airlines like Frontier, American and JetBlue seem to keep their prices relatively steady, whereas airlines like Delta and Spirit have large jumps in prices as the purchase date gets closer to the departure date. 
 
 It should be noted that these conclusions only apply to nonstop flights in coach and were drawn using data from 2022. 
 
+### Project Outputs
+- 📊 [Click here to view the interactive Looker Studio dashboard](https://lookerstudio.google.com/reporting/fabdcd7e-3789-4d10-abc8-9696a26eed5e)
+- 📓 [Click here to view the EDA & cleaning notebook](flight-prices/Flight_data_EDA.ipynb)
