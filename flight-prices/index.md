@@ -2,7 +2,6 @@
 title: Flight Prices
 layout: default
 ---
-[Home](/)
 # Flight Prices
 ### Project Overview
 #### Business Problem
