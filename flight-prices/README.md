@@ -2,7 +2,7 @@
 title: Flight Prices
 layout: default
 ---
-# Flight Prices 
+# Flight Prices
 ### Project Overview
 #### Business Problem
 What is the optimal number of days before departure to book a flight for the lowest fare?
@@ -20,7 +20,8 @@ The data set was created by Dillon Wong on Kaggle. The dataset contains **82.1M 
 
 ### Project Outputs
 - 📊 [Click here to view the interactive Looker Studio dashboard](https://lookerstudio.google.com/reporting/fabdcd7e-3789-4d10-abc8-9696a26eed5e)
-- 📓 [Click here to view the EDA & cleaning notebook](https://github.com/talisam89/data-portfolio/blob/main/flight-prices/Flight_data_EDA.ipynb) 
+- 📓 [Click here to view the EDA & cleaning notebook](https://github.com/talisam89/data-portfolio/blob/main/flight-prices/Flight_data_EDA.ipynb)
+
 ### Project Description
 ##### Step 1 - Managing dataset size for exploratory analysis
 
@@ -60,31 +61,31 @@ A downside to filtering out all those records was that it also filtered out all 
 Like exploratory analysis, data cleaning was a bit of an iterative process that I came back to after uploading the data to Looker Studio. One of the most challenging cleaning tasks was calculating and converting the number of days before departure a price was being checked. I needed to convert the date columns in the data to date time objects, create a new column that calculated the difference between the dates, and convert this difference to a number that could be used in a graph. 
 
 The cleaning tasks I focused on included:
-	- Remove more unnecessary columns
-	- Convert searchDate and FlightDate to date objects that can be subtracted from each other
-	- Create days before departure column and numeric days before departure column
-	- Calculate daysBeforeDeparture using searchDate and FlightDate
-	- Convert segmentsDurationInSeconds from string to float64
-	- Convert segmentsDurationInSeconds to hours
-	- Limit data to flight IDs with 60 or more records
+- Remove more unnecessary columns
+- Convert searchDate and FlightDate to date objects that can be subtracted from each other
+- Create days before departure column and numeric days before departure column
+- Calculate daysBeforeDeparture using searchDate and FlightDate
+- Convert segmentsDurationInSeconds from string to float64
+- Convert segmentsDurationInSeconds to hours
+- Limit data to flight IDs with 60 or more records
 
 Columns To Remove: Why Remove Them:
-	- fareBasisCode: determined this is an internal code unrelated to price
-	- elapsedDays: usually 0, doesn't add much information to analysis
-	- segmentsDepartureTimeEpochSeconds: chose to focus on other features impact on price
-	- segmentsDepartureTimeRaw: chose to focus on other features impact on price
-	- segmentsArrivalTimeEpochSeconds: chose to focus on other features impact on price
-	- segmentsArrivalTimeEpochSeconds: chose to focus on other features impact on price
-	- segmentsArrivalTimeRaw: chose to focus on other features impact on price
-	- segmentsArrivalAirportCode: this is not relevant for nonstop flights
-	- segmentsDepartureAirportCode: this is not relevant for nonstop flights
-	- segmentsAirlineCode: using the airline name field instead
-	- segmentsEquipmentDescription: chose to focus on other features impact on price
-	- travelDuration: in a weird format, using segmentsDurationInSeconds instead
-	- isBasicEconomy: doesn't match numbers of class, info in segment class more helpful
-	- isNonStop: already filtered on this and know data is only for nonstop flights
-	- segmentsDistance: going to use totalTravelDistance instead
-	- DistanceComp: column I added that I don't need
+- fareBasisCode: determined this is an internal code unrelated to price
+- elapsedDays: usually 0, doesn't add much information to analysis
+- segmentsDepartureTimeEpochSeconds: chose to focus on other features impact on price
+- segmentsDepartureTimeRaw: chose to focus on other features impact on price
+- segmentsArrivalTimeEpochSeconds: chose to focus on other features impact on price
+- segmentsArrivalTimeEpochSeconds: chose to focus on other features impact on price
+- segmentsArrivalTimeRaw: chose to focus on other features impact on price
+- segmentsArrivalAirportCode: this is not relevant for nonstop flights
+- segmentsDepartureAirportCode: this is not relevant for nonstop flights
+- segmentsAirlineCode: using the airline name field instead
+- segmentsEquipmentDescription: chose to focus on other features impact on price
+- travelDuration: in a weird format, using segmentsDurationInSeconds instead
+- isBasicEconomy: doesn't match numbers of class, info in segment class more helpful
+- isNonStop: already filtered on this and know data is only for nonstop flights
+- segmentsDistance: going to use totalTravelDistance instead
+- DistanceComp: column I added that I don't need
 
 ##### Step 4 - Building the Dashboard
 
