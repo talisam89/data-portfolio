@@ -14,15 +14,15 @@ Pycharm, Jupyter Notebook, Python (libraries: Dask, Pandas), Looker Studio
 #### Skills
 Exploratory analysis, data cleaning, analyzing big data, data visualization, dashboard design, creative problem solving, strategic thinking, data wrangling, data quality assessment, iterative analysis, tool optimization 
 
-#### Data Set
-The data set was created by Dillon Wong on Kaggle. The dataset contains **82.1M rows** and **27 fields**, totaling **31.1 GB** in size.
-[Click here to view the Flight Prices dataset on Kaggle](https://www.kaggle.com/datasets/dilwong/flightprices?utm_source=chatgpt.com)
-
 ### Project Outputs
 - 📊 [Click here to view the interactive Looker Studio dashboard](https://lookerstudio.google.com/reporting/fabdcd7e-3789-4d10-abc8-9696a26eed5e)
 - 📓 [Click here to view the EDA & cleaning notebook](flight-prices/Flight_data_EDA.ipynb)
 
 ### Project Description
+#### Data Set
+The data set was created by Dillon Wong on Kaggle. The dataset contains **82.1M rows** and **27 fields**, totaling **31.1 GB** in size.
+[Click here to view the Flight Prices dataset on Kaggle](https://www.kaggle.com/datasets/dilwong/flightprices?utm_source=chatgpt.com)
+
 ##### Step 1 - Managing dataset size for exploratory analysis
 
 Exploring the data was challenging due to its size. It was immediately clear that Pandas wasn't going to cut it, the data was taking too long to load. I searched for solutions to working with large data sets and came across the Dask library which lets you work with data without loading it all into memory at once. 
