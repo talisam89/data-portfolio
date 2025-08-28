@@ -1,3 +1,7 @@
+---
+title: Flight Prices
+layout: default
+---
 # Flight Prices 
 ### Project Overview
 #### Business Problem
