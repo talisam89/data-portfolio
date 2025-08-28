@@ -15,8 +15,8 @@ The data set was created by Dillon Wong on Kaggle. The dataset contains **82.1M 
 [Click here to view the Flight Prices dataset on Kaggle](https://www.kaggle.com/datasets/dilwong/flightprices?utm_source=chatgpt.com)
 
 ### Project Outputs
-- [Click here to view the EDA & Cleaning Notebook](https://github.com/talisam89/data-portfolio/blob/main/flight-prices/Flight_data_EDA.ipynb)
-- [Click her to view the Looker Studio Dashboard](https://lookerstudio.google.com/reporting/fabdcd7e-3789-4d10-abc8-9696a26eed5e)
+- 📊 [Click here to view the interactive Looker Studio dashboard](https://lookerstudio.google.com/reporting/fabdcd7e-3789-4d10-abc8-9696a26eed5e)
+- 📓 [Click here to view the EDA & cleaning notebook](https://github.com/talisam89/data-portfolio/blob/main/flight-prices/Flight_data_EDA.ipynb) 
 ### Project Description
 ##### Step 1 - Managing dataset size for exploratory analysis
 
