@@ -1,3 +1,7 @@
+---
+title: Projects
+layout: default
+---
 # Projects
 ## ✈️ Flight Prices
 ### Project Overview
