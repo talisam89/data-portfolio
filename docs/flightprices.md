@@ -123,4 +123,8 @@ It should be noted that these conclusions only apply to nonstop flights in coach
 
 ### Project Outputs
 - 📊 [Click here to view the interactive Looker Studio dashboard](https://lookerstudio.google.com/reporting/fabdcd7e-3789-4d10-abc8-9696a26eed5e)
-- 📓 [Click here to view the EDA & cleaning notebook](flight-prices/Flight_data_EDA.ipynb)
+- 📓 [Click here to view the EDA & cleaning notebook](https://github.com/talisam89/data-portfolio/blob/main/flight-prices/Flight_data_EDA.ipynb)
+
+
+
+[Back to Home](index.md)
