@@ -1,3 +1,8 @@
+---
+title: Projects
+layout: default
+---
+
 [Back to Home](index.md)
 
 # Flight Prices
