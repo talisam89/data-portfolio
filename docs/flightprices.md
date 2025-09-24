@@ -1,6 +1,6 @@
 ---
-title: Projects
 layout: default
+title: Flight Prices
 ---
 
 [Back to Home](index.md)
