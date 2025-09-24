@@ -2,6 +2,7 @@
 layout: default
 title: home
 ---
+👩 [About Me](about.md)
 # Projects
 ## ✈️ Flight Prices
 ### Project Overview
