@@ -1,6 +1,6 @@
 ---
-title: Projects
 layout: default
+title: home
 ---
 # Projects
 ## ✈️ Flight Prices
