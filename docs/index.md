@@ -15,7 +15,7 @@ Pycharm, Jupyter Notebook, Python (libraries: Dask, Pandas), Looker Studio
 #### Skills
 Exploratory analysis, data cleaning, analyzing big data, data visualization, dashboard design, creative problem solving, strategic thinking, data wrangling, data quality assessment, iterative analysis, tool optimization 
 ### Project Description
-[Click here to read a step by step project description](flightprices.md)
+📝 [Click here to read a step by step project description](flightprices.md)
 ### Project Outputs
 - 📊 [Click here to view the interactive Looker Studio dashboard](https://lookerstudio.google.com/reporting/fabdcd7e-3789-4d10-abc8-9696a26eed5e)
 - 📓 [Click here to view the EDA & cleaning notebook](https://github.com/talisam89/data-portfolio/blob/main/flight-prices/Flight_data_EDA.ipynb)
