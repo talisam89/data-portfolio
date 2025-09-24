@@ -19,8 +19,3 @@ Exploratory analysis, data cleaning, analyzing big data, data visualization, das
 - 📊 [Click here to view the interactive Looker Studio dashboard](https://lookerstudio.google.com/reporting/fabdcd7e-3789-4d10-abc8-9696a26eed5e)
 - 📓 [Click here to view the EDA & cleaning notebook](https://github.com/talisam89/data-portfolio/blob/main/flight-prices/Flight_data_EDA.ipynb)
 
-
-# 📬 Connect with Me
-- 📧 [Email](mailto:talisamanker@gmail.com)
-- 🔗 [LinkedIn](https://www.linkedin.com/in/talisamanker/)
-
