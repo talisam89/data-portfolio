@@ -1,3 +1,7 @@
+---
+layout: default
+title: about
+---
 # About Me
 
 # 📬 Connect with Me
